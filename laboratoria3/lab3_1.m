@@ -31,7 +31,7 @@ h = fir1(M-1,0.3);  % 0.5 to wsółczynnik który przesuwa próg filtracji
                     % jest to częstotliwość unormowana (zakładamy  ze
                     % maksymana częstotliwość wynosi 1 odpowiada połowie
                     % częstotliwości próbkowania
-                    % x=focięcia/(fprobkowania/2) M-długość filtra (im
+                    % x=fodcięcia/(fprobkowania/2) M-długość filtra (im
                     % dłuższy tym lepsza jakość ale większe opóźnienie
                     % sygnału
 th  = 0: 1/fp : (M-1)/fp;

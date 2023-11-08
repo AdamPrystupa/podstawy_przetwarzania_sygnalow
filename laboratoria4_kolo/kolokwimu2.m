@@ -7,7 +7,7 @@ N = 2000;
 fp = 1000;
 t = 0:1/fp:(N-1)/fp;
 
-x = 5*chirp(t,200,4,300) + sin(2*pi*150*t)+sin(2*pi*250*t);
+x = 5*chirp(t,200,t(end),300) + sin(2*pi*150*t)+sin(2*pi*250*t);
 
 figure; 
 
@@ -29,7 +29,7 @@ xlabel('czestotliwosc [Hz]');
 ylabel('modul widma');
 
 M=201;
-y=fir1(M-1,.463);
+y=fir1(M-1,.4636);
 ty=0:1/fp:(M-1)/fp;
 subplot(323);
 plot(ty,y);

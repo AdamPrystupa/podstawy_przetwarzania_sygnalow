@@ -14,7 +14,7 @@ title('sygnal');
 xlabel('czas [s]');
 ylabel( 'x(t)');
 
-kmax = 200;  %im większy tym większy odcinek czasu bieżemy ; dobieramy tak żeby było widać 2-3 maksima
+kmax = 100;  %im większy tym większy odcinek czasu bieżemy ; dobieramy tak żeby było widać 2-3 maksima
 rx = xcorr(x,x,kmax);
 tx = -kmax/fp : 1/fp : kmax/fp;
 subplot(2,2,3);
@@ -24,9 +24,9 @@ xlabel('opoznienie [s]');
 ylabel( 'xcorr');
 
 
-kmax = 100;
-rx = xcorr(x,x1,kmax);
-tx = -kmax/fp : 1/fp : kmax/fp;
+kmax1 = 100;
+rx = xcorr(x,x1,kmax1);
+tx = -kmax1/fp : 1/fp : kmax1/fp;
 subplot(2,2,4);
 plot(tx,rx);
 title('korelacja x i x1');
